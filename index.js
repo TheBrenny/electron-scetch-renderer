@@ -1,4 +1,4 @@
-const path = require("path");
+const pathLib = require("path");
 const fs =require("fs");
 const scetch = require("scetch");
 const mime = require('mime');
@@ -8,14 +8,10 @@ const EventEmitter = require("events").EventEmitter;
 const htmlMime = mime.getType('html');
 
 const options = {
-    root: path.join(__dirname, 'views'),
+    root: pathLib.join(__dirname, 'views'),
     ext: ".sce",
     nonceName: "nonce"
 };
-
-function getPath(p) {
-    return process.platform === "win32" && !url.host.trim() ? res.substring(1) : res;
-}
 
 function setup(electron, scetchOptions) {
     Object.assign(options, scetchOptions);
@@ -41,7 +37,7 @@ function setup(electron, scetchOptions) {
 
         try {
             let content = fs.readFileSync(path);
-            let ext = path.extname(path);
+            let ext = pathLib.extname(path);
             let data = {data: content, mimeType: mime.getType(ext)};
 
             if(ext === '.sce') {
