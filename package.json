@@ -1,6 +1,6 @@
 {
   "name": "electron-scetch-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A scetch renderer for Electron.",
   "main": "index.js",
   "scripts": {
