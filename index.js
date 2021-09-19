@@ -1,4 +1,5 @@
 const path = require("path");
+const fs =require("fs");
 const scetch = require("scetch");
 const mime = require('mime');
 const URL = require("url").URL;
