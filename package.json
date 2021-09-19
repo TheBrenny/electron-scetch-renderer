@@ -1,0 +1,33 @@
+{
+  "name": "electron-scetch-renderer",
+  "version": "1.0.0",
+  "description": "A scetch renderer for Electron.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests. Maybe you can write them?\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBrenny/electron-scetch-renderer.git"
+  },
+  "keywords": [
+    "electron",
+    "scetch",
+    "template",
+    "rendering",
+    "engine",
+    "engine",
+    "html",
+    "js"
+  ],
+  "author": "TheBrenyn <iam+dev@justbrenny.me>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TheBrenny/electron-scetch-renderer/issues"
+  },
+  "homepage": "https://github.com/TheBrenny/electron-scetch-renderer#readme",
+  "dependencies": {
+    "mime": "^2.5.2",
+    "scetch": "^1.5.4"
+  }
+}
