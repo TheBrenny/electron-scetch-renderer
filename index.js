@@ -40,8 +40,8 @@ function setup(electron, scetchOptions) {
         }
 
         try {
-            let content = fs.readFileSync(file);
-            let ext = path.extname(file);
+            let content = fs.readFileSync(path);
+            let ext = path.extname(path);
             let data = {data: content, mimeType: mime.getType(ext)};
 
             if(ext === '.sce') {
