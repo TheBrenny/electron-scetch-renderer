@@ -22,7 +22,7 @@ function setup(electron, scetchOptions) {
 
     const emitter = new EventEmitter();
     electron.protocol.interceptBufferProtocol("file", (request, callback) => {
-        let url = new URL(p);
+        let url = new URL(request.url);
         let path = decodeURIComponent(url.pathname);
         if(process.platform === "win32" && !url.host.trim()) path = path.substring(1);
 
