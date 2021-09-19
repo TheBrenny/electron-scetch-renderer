@@ -2,7 +2,7 @@ const path = require("path");
 const scetch = require("scetch");
 const mime = require('mime');
 const URL = require("url").URL;
-
+const EventEmitter = require("events").EventEmitter;
 
 const htmlMime = mime.getType('html');
 
